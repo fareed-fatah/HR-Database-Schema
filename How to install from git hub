@@ -1,0 +1,16 @@
+mkdir HR-Database-Schema
+cd HR-Database-Schema
+
+git init
+git config --local user.name "اسمك"
+git config --local user.email "بريدك@الخاص.com"
+
+# أنشئ الملفات (استخدم notepad أو nano)
+echo "# HR Database" > README.md
+touch database_schema.sql sample_data_inserts.sql execution_guide.txt
+
+git add .
+git commit -m "أول إدخال: هيكل قاعدة البيانات"
+git branch -M main
+git remote add origin https://github.com/USERNAME/HR-Database-Schema.git
+git push -u origin main
